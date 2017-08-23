@@ -1,0 +1,15 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>buildingTool</Name><AddInID>{0bef4e61-6332-4bca-a908-959ca3c0b4e7}</AddInID><Description>Make Buildings by inputing square footage</Description><Version>0.1</Version><Image>Images\doge.png</Image><Author>Jack Wilson</Author><Company>Untitled</Company><Date>11/07/2016</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="leetScripts_addin.py" namespace="leetScripts_addin"><ArcMap>
+    <Commands>
+        <Button caption="Set Layer" category="buildingTool" class="SetLayer" id="leetScripts_addin.button2" image="Images\socially_awkward_penguin_blank.png" message="Click on the layer to be edited in the Catalog" tip="Click on the layer to be edited in the Catalog"><Help heading="Click on the layer to be edited in the Catalog">Click on the layer to be edited in the Catalog</Help></Button>
+        <Tool caption="Set Centerpoint" category="buildingTool" class="setCenterpoint" id="leetScripts_addin.tool" image="" message="Set the centerpoint of the building to be drawn" tip="Set the centerpoint of the building to be drawn"><Help heading="Set the centerpoint of the building to be drawn">Set the centerpoint of the building to be drawn</Help></Tool>
+        <ComboBox caption="Set Area" category="buildingTool" class="setArea" id="leetScripts_addin.combobox" itemSizeString="WWWWWW" message="Set the area of the building to be drawn" rows="4" sizeString="WWWWWW" tip="Set the area of the building to be drawn"><Help heading="Set the area of the building to be drawn">Set the area of the building to be drawn</Help></ComboBox>
+        <Button caption="Building Tool" category="buildingTool" class="buildingTool" id="leetScripts_addin.button" image="Images\doge.png" message="Click to draw building" tip="Click to draw building"><Help heading="Click to draw building">Click to draw building</Help></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="buildingTool" category="buildingTool" id="leetScripts_addin.toolbar" showInitially="true"><Items><Button refID="leetScripts_addin.button2" /><Tool refID="leetScripts_addin.tool" /><ComboBox refID="leetScripts_addin.combobox" /><Button refID="leetScripts_addin.button" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
