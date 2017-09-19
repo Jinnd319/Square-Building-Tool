@@ -208,6 +208,12 @@ class buildingTool(object):
     #Catching all errors with the table view or using the same trick 
     #with isSDE to make sure table view is only created when it needs
     #to be.
+    
+    #Occassionally there is a strange error that appears because the
+    #the connection file is too old. If you're getting an error 
+    #regarding the tableview or if the building isn't being drawn and
+    #even though you're not getting an error, try deleting the
+    #connection file. The script will rebuild it for you.
             if not arcpy.Exists("editView" + database):  
                 try:
                 #occasionally fails because the connection file is too
